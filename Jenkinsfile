@@ -5,22 +5,16 @@ node("master") {
  
     /* build stage */ 
     stage('build') { 
-        steps { 
-          bat 'npm install' 
-        } 
+        bat 'npm install' 
     } 
  
     /* testing stage */ 
     stage('test') { 
-        steps { 
-          bat 'npm test' 
-        } 
+		bat 'npm test' 
     } 
  
     /* deploy stage */ 
     stage('deploy') { 
-        steps { 
-          bat 'npm publish' 
-        } 
+		bat 'npm publish' 
     } 
 } 
