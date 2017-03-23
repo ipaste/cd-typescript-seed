@@ -27,7 +27,7 @@ gulp.task('test', function (done) {
  * Run lint on source and spec
  */
 gulp.task('lint', () => {
-    return gulp.src(['src/**/*.ts', 'spec/**/*.ts'])
+    return gulp.src(['src/**/*.ts', 'test/**/*.ts'])
         .pipe(tslint({
             formatter: "verbose"
         }))
