@@ -1,0 +1,14 @@
+{
+    "include": [
+        "src/**/*.ts"
+    ],
+    "compilerOptions": {
+        "noImplicitAny": true,
+        "target": "es5",
+        "module": "amd",
+        "types": [
+            "jasmine",
+            "es6-promise"
+        ]
+    }
+}

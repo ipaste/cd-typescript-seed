@@ -1,0 +1,29 @@
+{
+  "name": "ts-whitepaper",
+  "version": "1.0.0",
+  "description": "Test project",
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/es6-promise": "0.0.32",
+    "@types/jasmine": "^2.5.46",
+    "core-js": "^2.4.1",
+    "gulp": "^3.9.1",
+    "gulp-tslint": "^7.1.0",
+    "gulp-typescript": "^3.1.6",
+    "jasmine-core": "^2.5.2",
+    "karma": "^1.5.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-jasmine": "^1.1.0",
+    "karma-phantomjs-launcher": "^1.0.4",
+    "karma-systemjs": "^0.16.0",
+    "karma-typescript": "^2.1.7",
+    "systemjs": "^0.20.10",
+    "tslint": "^4.5.1",
+    "typescript": "^2.2.1"
+  }
+}
