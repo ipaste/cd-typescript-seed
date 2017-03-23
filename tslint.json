@@ -1,0 +1,9 @@
+{
+    "rules": {
+        "no-any": true,
+        "no-bitwise": true,
+        "no-eval": true,
+        "no-namespace": true,
+        "no-trailing-whitespace": true
+    }
+}
