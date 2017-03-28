@@ -36,6 +36,9 @@ gulp.task('lint', () => {
 });
 
 gulp.task('version', () => {
+    if (process.env["NPM_TOKEN"] === undefined)
+        throw new Error("Task 'publish:npm' is only applicable for CI");
+
     var releaseType = "patch";
     // Fetching last commit message
     var commitmsg = exec("git log -n 1 --format=%s").toString("utf8").replace(/\n/g, " ");
@@ -60,6 +63,10 @@ gulp.task('version', () => {
 });
 
 gulp.task('publish:npm', ["version"], () => {
+
+    // Writing npm authentication token in .npmrc file
+    exec(`echo //registry.npmjs.org/:_authToken=${process.env["NPM_TOKEN"]} > .npmrc`);
+
     // Executing npm publish command.
     exec("npm publish");
 });
