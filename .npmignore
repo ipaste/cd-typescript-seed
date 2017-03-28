@@ -1,0 +1,11 @@
+.\test
+gulpfile.js
+karma.conf.js
+system.config.js
+test-main.js
+tslint.json
+node_modules
+coverage
+.vscode
+.gitignore
+tsconfig.json

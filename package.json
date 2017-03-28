@@ -1,9 +1,10 @@
 {
-  "name": "ts-whitepaper",
+  "name": "cd-typescript-seed",
   "version": "1.0.0",
-  "description": "Test project",
+  "description": "Seed project for TypeScript configured with Jasmine, SystemJS, Karma and Jenkinsfile",
   "main": "index.js",
   "scripts": {
+    "prepublish": "gulp lint && gulp compile:dist",
     "test": "gulp test"
   },
   "author": "",

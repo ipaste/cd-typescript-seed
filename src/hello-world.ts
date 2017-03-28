@@ -1,3 +1,3 @@
-export function sayHello(name: string): string{
+export function sayHello(name: string): string {
     return `Hello ${name || ""}`;
 }
