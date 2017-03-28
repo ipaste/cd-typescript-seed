@@ -1,6 +1,6 @@
 {
   "name": "cd-typescript-seed",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Seed project for TypeScript configured with Jasmine, SystemJS, Karma and Jenkinsfile",
   "main": "index.js",
   "scripts": {
